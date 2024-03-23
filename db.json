@@ -1,0 +1,20 @@
+{
+  "Users": [
+    {
+      "email": "tejasreelokireddy@gmail.com",
+      "password": "123456",
+      "username": "TejasreeL",
+      "id": 1
+    },
+    {
+      "email": "tejasreelokireddy@gmail.com",
+      "password": "123456",
+      "id": 2
+    },
+    {
+      "email": "tejasreelokireddy@gmail.com",
+      "password": "123456",
+      "id": 3
+    }
+  ]
+}
