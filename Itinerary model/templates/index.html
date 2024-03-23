@@ -1,20 +1,34 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Itinerary Generator</title>
+    <!-- Include Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-    <h1>Generate a Custom Itinerary</h1>
-    <form method="POST" action="/generate_itinerary">
-        <label for="location">Location:</label><br>
-        <input type="text" id="location" name="location"><br><br>
-        <label for="days">Number of Days:</label><br>
-        <input type="number" id="days" name="days"><br><br>
-	<label for="days">Budget:</label><br>
-        <input type="number" id="budget" name="budget"><br><br>
-	<label for="days">Currency:</label><br>
-        <input type="text" id="currency" name="currency"><br><br>
-        <button type="submit">Generate Itinerary</button>
-    </form>
+<body class="bg-gray-100">
+    <div class="container mx-auto p-4">
+        <h1 class="text-3xl font-bold mb-4">Generate a Custom Itinerary</h1>
+        <form method="POST" action="/generate_itinerary" class="max-w-md">
+            <div class="mb-4">
+                <label for="location" class="block text-sm font-medium text-gray-700">Location:</label>
+                <input type="text" id="location" name="location" class="mt-1 p-2 border border-gray-300 rounded-md w-full focus:outline-none focus:ring focus:ring-indigo-200">
+            </div>
+            <div class="mb-4">
+                <label for="days" class="block text-sm font-medium text-gray-700">Number of Days:</label>
+                <input type="number" id="days" name="days" class="mt-1 p-2 border border-gray-300 rounded-md w-full focus:outline-none focus:ring focus:ring-indigo-200">
+            </div>
+            <div class="mb-4">
+                <label for="budget" class="block text-sm font-medium text-gray-700">Budget:</label>
+                <input type="number" id="budget" name="budget" class="mt-1 p-2 border border-gray-300 rounded-md w-full focus:outline-none focus:ring focus:ring-indigo-200">
+            </div>
+            <div class="mb-4">
+                <label for="currency" class="block text-sm font-medium text-gray-700">Currency:</label>
+                <input type="text" id="currency" name="currency" class="mt-1 p-2 border border-gray-300 rounded-md w-full focus:outline-none focus:ring focus:ring-indigo-200">
+            </div>
+            <button type="submit" class="bg-indigo-500 text-white py-2 px-4 rounded-md hover:bg-indigo-600 focus:outline-none focus:bg-indigo-600">Generate Itinerary</button>
+        </form>
+    </div>
 </body>
 </html>
